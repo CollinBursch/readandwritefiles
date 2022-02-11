@@ -4,7 +4,7 @@ def main():
     student_scores_infile = open('student_scores.csv', 'r') # Reading customer.csv file
     csv_reader = csv.reader(student_scores_infile)
 
-    student_scores_outfile = open('student_avg.csv', 'w', newline='') #create new file 'custoemr_country.csv'
+    student_scores_outfile = open('student_avg.csv', 'w', newline='') #create new file 'custoemr_country.csv' (newline is to create any empty spaces in between)
     csv_writer = csv.writer(student_scores_outfile)
     
     for line in csv_reader:
